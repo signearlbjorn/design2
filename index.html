@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="dk">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap" rel="stylesheet">
+	<title>Concept Website Design 2</title>
+	<style type="text/css">
+
+	html, body {
+  		margin: 0;
+ 		padding: 0;
+ 		font-family: "Lexend", sans-serif;
+	}
+
+	h1 {
+  		font-family: 'Lexend', serif;
+  		font-size: 2.9em;
+  		color: white;
+	}
+
+	p {
+  		font-family: 'Lexend', serif;
+  		font-size:1.5em;
+ 	 	line-height:1.35;
+	}
+
+	section {
+		position:sticky;
+	  	position:-webkit-sticky;
+  	  	top: 0;
+  	  	padding:30px;
+  	  	min-height: 100vh;
+  	  	background-color: #000000;
+	}
+
+	#h1-section-one {
+		margin-top: 0vh;
+	}
+
+	#h1-section-two, #h1-section-four {
+		color:  black;
+	}
+
+	#section-one {
+		height: 100vh;
+				background: url("moen.jpg");
+		background-size: cover; 
+		background-repeat: no-repeat;
+		background-position: top left;
+	}
+
+	#section-two {
+  		background-color: #ffffff;
+  		height: 100%;
+	}
+
+	#section-four {
+		background-color: #ffffff;
+	}
+
+	#section-three {
+  		background-color: #000000;
+	}
+
+	#logo {
+		background: url("primary.png");
+		background-size: contain; 
+		background-repeat: no-repeat;
+		background-position: top left;
+		width: 100%;
+		height: 30px;
+		margin-top: 20px;
+	}
+
+	#animation {
+		background: url("animation.png");
+		background-size: contain; 
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 100%;
+		height: 100%;
+		margin-top: -5vh;
+		z-index: -1;
+	}
+
+
+	</style>
+</head>
+<body>
+
+    <section id="section-one">
+    	<div id="logo"></div>
+    	<div id="animation"></div>
+    	<h1 id="h1-section-one">we deliver powerful ad experiences at scale within the nordic region</h1>
+    </section>
+    <section id="section-two">
+      
+      <h1 id="h1-section-two">who we are</h1>
+      <p>A house of brands - all leading players within their field in the digital advertising space.<br>We have a strong track record in developing and growing successful brands and companies for the last 15 years.<br><br>  
+
+      One-stop-shop to create and deliver digital advertising without all the hassle.<br>We remove friction in the whale process, and we’re well known for delivering the best service in our industry. </p>
+
+
+    </section>
+   
+    <section id="section-three">
+      
+      <h1 id="h1-section-three">how can we help you</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis dolor nibh. Ut egestas eleifend metus, sed ullamcorper purus dictum nec. Praesent ultrices ligula dui, quis porttitor felis sollicitudin condimentum. Mauris non massa a sapien porta convallis non elementum dui. Aenean urna neque, tempus vel ante a, sagittis imperdiet dolor. Suspendisse dictum rutrum velit, sed fermentum nisl mattis a. Nunc et enim rutrum, dictum felis eget, hendrerit tellus.</p>
+
+    </section>
+
+    <section id="section-four">
+      
+      <h1 id="h1-section-four">you are in good hands</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis dolor nibh. Ut egestas eleifend metus, sed ullamcorper purus dictum nec. Praesent ultrices ligula dui, quis porttitor felis sollicitudin condimentum. Mauris non massa a sapien porta convallis non elementum dui. Aenean urna neque, tempus vel ante a, sagittis imperdiet dolor. Suspendisse dictum rutrum velit, sed fermentum nisl mattis a. Nunc et enim rutrum, dictum felis eget, hendrerit tellus.</p>
+
+    </section>
+
+ 	<script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.0.1_min.js"></script>
+   <script type="text/javascript">
+
+   	timeline = gsap.timeline();
+
+	timeline
+	.from("#animation", .9, {opacity: 0, delay: 1, ease:Power2.easeOut},)
+	.to("#animation", .9, {opacity: 0, delay: 1, ease:Power2.easeOut},)
+	.from("#h1-section-one", .9, {delay: 0.1, y: 700, ease:Power2.easeOut},)
+   </script>
+  </body>
+</html>
